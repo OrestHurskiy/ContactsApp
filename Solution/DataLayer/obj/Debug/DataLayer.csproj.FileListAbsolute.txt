@@ -1,0 +1,28 @@
+c:\users\ohurskiy\documents\visual studio 2013\Projects\ContactApp\DataLayer\bin\Debug\DataLayer.dll.config
+c:\users\ohurskiy\documents\visual studio 2013\Projects\ContactApp\DataLayer\bin\Debug\DataLayer.dll
+c:\users\ohurskiy\documents\visual studio 2013\Projects\ContactApp\DataLayer\bin\Debug\DataLayer.pdb
+c:\users\ohurskiy\documents\visual studio 2013\Projects\ContactApp\DataLayer\bin\Debug\EntityFramework.dll
+c:\users\ohurskiy\documents\visual studio 2013\Projects\ContactApp\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\ohurskiy\documents\visual studio 2013\Projects\ContactApp\DataLayer\bin\Debug\EntityFramework.xml
+c:\users\ohurskiy\documents\visual studio 2013\Projects\ContactApp\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\ohurskiy\documents\visual studio 2013\Projects\ContactApp\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+c:\users\ohurskiy\documents\visual studio 2013\Projects\ContactApp\DataLayer\obj\Debug\DataLayer.dll
+c:\users\ohurskiy\documents\visual studio 2013\Projects\ContactApp\DataLayer\obj\Debug\DataLayer.pdb
+D:\Repo\SVN\ContactApp\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+D:\Repo\SVN\ContactApp\DataLayer\obj\Debug\DataLayer.dll
+D:\Repo\SVN\ContactApp\DataLayer\bin\Debug\DataLayer.dll.config
+D:\Repo\SVN\ContactApp\DataLayer\bin\Debug\DataLayer.dll
+D:\Repo\SVN\ContactApp\DataLayer\bin\Debug\DataLayer.pdb
+D:\Repo\SVN\ContactApp\DataLayer\bin\Debug\EntityFramework.dll
+D:\Repo\SVN\ContactApp\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\Repo\SVN\ContactApp\DataLayer\bin\Debug\EntityFramework.xml
+D:\Repo\SVN\ContactApp\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\Repo\SVN\ContactApp\DataLayer\obj\Debug\DataLayer.pdb
+D:\New folder\Solution\DataLayer\bin\Debug\DataLayer.dll.config
+D:\New folder\Solution\DataLayer\bin\Debug\DataLayer.dll
+D:\New folder\Solution\DataLayer\bin\Debug\DataLayer.pdb
+D:\New folder\Solution\DataLayer\bin\Debug\EntityFramework.xml
+D:\New folder\Solution\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+D:\New folder\Solution\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+D:\New folder\Solution\DataLayer\obj\Debug\DataLayer.dll
+D:\New folder\Solution\DataLayer\obj\Debug\DataLayer.pdb
