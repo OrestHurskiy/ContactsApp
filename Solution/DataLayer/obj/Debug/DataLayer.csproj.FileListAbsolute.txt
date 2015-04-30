@@ -26,3 +26,13 @@ D:\New folder\Solution\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
 D:\New folder\Solution\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
 D:\New folder\Solution\DataLayer\obj\Debug\DataLayer.dll
 D:\New folder\Solution\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\DataLayer\obj\Debug\DataLayer.dll
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\DataLayer\bin\Debug\DataLayer.dll.config
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\DataLayer\bin\Debug\DataLayer.dll
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\DataLayer\bin\Debug\DataLayer.pdb
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\DataLayer\bin\Debug\Models.dll
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\DataLayer\bin\Debug\Models.pdb
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\DataLayer\bin\Debug\EntityFramework.SqlServer.xml

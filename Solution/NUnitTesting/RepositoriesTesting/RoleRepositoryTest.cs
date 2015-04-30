@@ -1,5 +1,7 @@
-﻿using DataLayer.Components;
-using DataLayer.Wrapper;
+﻿using DataLayer;
+using DataLayer.Repositories;
+using DataLayer.Repositories.Interfaces;
+using Models.Entities;
 using NUnit.Framework;
 
 namespace NUnitTesting.RepositoriesTesting

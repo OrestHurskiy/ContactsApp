@@ -1,7 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using DataLayer.Components;
-using DataLayer.Wrapper;
+﻿using System.Collections.Generic;
+using DataLayer;
+using DataLayer.Repositories;
+using DataLayer.Repositories.Interfaces;
+using Models.Entities;
 using NUnit.Framework;
 
 namespace NUnitTesting.RepositoriesTesting

@@ -12,3 +12,16 @@ D:\Repo\SVN\ContactApp\NUnitTesting\bin\Debug\nunit.framework.xml
 D:\Repo\SVN\ContactApp\NUnitTesting\obj\Debug\NUnitTesting.csprojResolveAssemblyReference.cache
 D:\Repo\SVN\ContactApp\NUnitTesting\obj\Debug\NUnitTesting.dll
 D:\Repo\SVN\ContactApp\NUnitTesting\obj\Debug\NUnitTesting.pdb
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\NUnitTesting\obj\Debug\NUnitTesting.csprojResolveAssemblyReference.cache
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\NUnitTesting\obj\Debug\NUnitTesting.dll
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\NUnitTesting\obj\Debug\NUnitTesting.pdb
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\NUnitTesting\bin\Debug\NUnitTesting.dll.config
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\NUnitTesting\bin\Debug\NUnitTesting.dll
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\NUnitTesting\bin\Debug\NUnitTesting.pdb
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\NUnitTesting\bin\Debug\DataLayer.dll
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\NUnitTesting\bin\Debug\Models.dll
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\NUnitTesting\bin\Debug\Models.pdb
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\NUnitTesting\bin\Debug\DataLayer.pdb
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\NUnitTesting\bin\Debug\EntityFramework.xml
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\NUnitTesting\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ohurskiy\Documents\GitHub\ContactsApp\Solution\NUnitTesting\bin\Debug\nunit.framework.xml

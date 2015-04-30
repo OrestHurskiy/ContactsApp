@@ -1,11 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Security.Cryptography;
-using DataLayer.Components;
+using DataLayer.Repositories.Interfaces;
+using Models.Entities;
 
-namespace DataLayer.Wrapper
+namespace DataLayer.Repositories
 {
     public class CustomerRepository : ICustomerRepository
     {
