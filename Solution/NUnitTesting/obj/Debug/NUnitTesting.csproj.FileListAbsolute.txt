@@ -1,0 +1,14 @@
+D:\Repo\SVN\ContactApp\NUnitTesting\bin\Debug\NUnitTesting.dll.config
+D:\Repo\SVN\ContactApp\NUnitTesting\bin\Debug\NUnitTesting.dll
+D:\Repo\SVN\ContactApp\NUnitTesting\bin\Debug\NUnitTesting.pdb
+D:\Repo\SVN\ContactApp\NUnitTesting\bin\Debug\DataLayer.dll
+D:\Repo\SVN\ContactApp\NUnitTesting\bin\Debug\EntityFramework.dll
+D:\Repo\SVN\ContactApp\NUnitTesting\bin\Debug\EntityFramework.SqlServer.dll
+D:\Repo\SVN\ContactApp\NUnitTesting\bin\Debug\nunit.framework.dll
+D:\Repo\SVN\ContactApp\NUnitTesting\bin\Debug\DataLayer.pdb
+D:\Repo\SVN\ContactApp\NUnitTesting\bin\Debug\EntityFramework.xml
+D:\Repo\SVN\ContactApp\NUnitTesting\bin\Debug\EntityFramework.SqlServer.xml
+D:\Repo\SVN\ContactApp\NUnitTesting\bin\Debug\nunit.framework.xml
+D:\Repo\SVN\ContactApp\NUnitTesting\obj\Debug\NUnitTesting.csprojResolveAssemblyReference.cache
+D:\Repo\SVN\ContactApp\NUnitTesting\obj\Debug\NUnitTesting.dll
+D:\Repo\SVN\ContactApp\NUnitTesting\obj\Debug\NUnitTesting.pdb
