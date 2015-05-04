@@ -39,13 +39,12 @@ namespace NUnitTesting.RepositoriesTesting
             customerToDelete = new Customer { Mail = "ivan2@gmail.com", Name = "Ivan2" };
             customerToDelete1 = new Customer { Mail = "ivan3@gmail.com", Name = "Ivan3" };
             customerToGet = new Customer {Mail = "ivan4@gmail.com", Name = "Ivan4"};
-         
+
             customerRepository.Create(customerToUpdate);
             customerRepository.Create(customerToUpdate1);
-            customerRepository.Create(customerToDelete);
-            customerRepository.Create(customerToDelete1);
             customerRepository.Create(customerToGet);
             contextManager.BatchSave();
+         
         }
 
         [TearDown]
@@ -55,39 +54,12 @@ namespace NUnitTesting.RepositoriesTesting
             customerRepository.Delete(customerToUpdate1);
             customerRepository.Delete(customerToGet);
             contextManager.BatchSave();
-            
-
-            bool saveFailed;
-            do
-            {
-                saveFailed = false;
-                try
-                {
-                    customerRepository.Delete(customerToCreate1);
-                    customerRepository.Delete(customerToCreate);
-                    
-                }
-                catch (DbUpdateConcurrencyException ex)
-                {
-                    
-                    saveFailed = true;
-
-                    foreach (var entry in ex.Entries)
-                    {
-                       
-                        entry.OriginalValues.SetValues(entry.GetDatabaseValues());
-                        
-                    }
-                   
-                   contextManager.BatchSave(); 
-                }
-            } while (saveFailed);
         }
                
         
 
         [Test]
-        public void InsertCustomerToDatabase_InBatchMode_Success()
+        public void InsertCustomer_ToDatabase_InBatchMode_Success()
         {
             customerRepository.Create(customerToCreate);
             customerRepository.Create(customerToCreate1);
@@ -96,10 +68,13 @@ namespace NUnitTesting.RepositoriesTesting
             Assert.IsNotNull(customerRepository.GetCustomerById(customerToCreate.Id));
             Assert.IsNotNull(customerRepository.GetCustomerById(customerToCreate1.Id));
 
+            customerRepository.Delete(customerToCreate);
+            customerRepository.Delete(customerToCreate1);
+
         }
 
         [Test]
-        public void UpdateCustomerFromDatabase_InBatchMode_Success()
+        public void UpdateCustomer_FromDatabase_InBatchMode_Success()
         {
             customerToUpdate.Name = "Taras";
             customerToUpdate.Mail = "taras@mail.ru";
@@ -121,8 +96,11 @@ namespace NUnitTesting.RepositoriesTesting
         }
 
         [Test]
-        public void DeleteCustomerFromDatabase_InBatchMode_Success()
+        public void DeleteCustomer_FromDatabase_InBatchMode_Success()
         {
+            customerRepository.Create(customerToDelete);
+            customerRepository.Create(customerToDelete1);
+
             Assert.IsTrue(customerRepository.Delete(customerToDelete));
             Assert.IsTrue(customerRepository.Delete(customerToDelete1));
             contextManager.BatchSave();
@@ -132,7 +110,7 @@ namespace NUnitTesting.RepositoriesTesting
         }
 
         [Test]
-        public void GetCustomerByIdFromDatabase_Success()
+        public void GetCustomerById_FromDatabase_Success()
         {
             var customer = customerRepository.GetCustomerById(customerToGet.Id);
             Assert.IsNotNull(customer);
@@ -142,7 +120,7 @@ namespace NUnitTesting.RepositoriesTesting
         }
 
         [Test]
-        public void GetCustomerByNameFromDatabase_Success()
+        public void GetCustomerByName_FromDatabase_Success()
         {
             var customer = customerRepository.GetCustomerByName(customerToGet.Name);
             Assert.IsNotNull(customer);
@@ -151,7 +129,7 @@ namespace NUnitTesting.RepositoriesTesting
         }
 
         [Test]
-        public void GetCustomerByMailFromDatabase_Success()
+        public void GetCustomerByMail_FromDatabase_Success()
         {
             var customer = customerRepository.GetCustomerByMail(customerToGet.Mail);
             Assert.IsNotNull(customer);
@@ -160,7 +138,7 @@ namespace NUnitTesting.RepositoriesTesting
         }
 
         [Test]
-        public void GetCustomersFromDatabase_Success()
+        public void GetCustomersFrom_Database_Success()
         {
             var customers = customerRepository.GetCustomers();
             Assert.IsNotNull(customers);

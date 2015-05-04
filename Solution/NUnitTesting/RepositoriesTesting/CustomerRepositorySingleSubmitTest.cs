@@ -23,85 +23,87 @@ namespace NUnitTesting.RepositoriesTesting
             contextManager = new ContextManager(false);
             customerRepository = new CustomerRepository(contextManager);
 
-            customerToCreate = new Customer {Id = 1, Mail = "orest@gmail.com", Name = "Orest"};
-            customerToDelete = new Customer {Id = 15, Mail = "orest@gmail.com", Name = "Orest"};
-            customerToGet = new Customer {Id = 4, Name = "Marta", Mail = "marta@gmail.com"};
-            customerToUpdate = new Customer { Id = 6, Name = "Vanka", Mail = "lol@mail.ru" };
+            customerToCreate = new Customer { Mail = "ivan@gmail.com", Name = "Ivan" };
+            customerToUpdate = new Customer { Mail = "maryan@gmail.com", Name = "Maryan" };
+            customerToDelete = new Customer { Mail = "ivan2@gmail.com", Name = "Ivan2" };
+            customerToGet = new Customer { Mail = "ivan4@gmail.com", Name = "Ivan4" };
 
+            customerRepository.Create(customerToUpdate);
+            customerRepository.Create(customerToGet);
         }
 
         [TearDown]
         public void TearDown()
         {
-            customerToCreate = null;
-            customerToDelete = null;
-            customerToUpdate = null;
-            customerToGet = null;
+            customerRepository.Delete(customerToUpdate);
+            customerRepository.Delete(customerToGet);
         }
 
         [Test]
-        public void InsertCustomerToDatabasePerRequestSuccess()
+        public void InsertCustomer_ToDatabase_PerRequest_Success()
         {
-            var initialId = customerToCreate.Id;
             customerRepository.Create(customerToCreate);
-            Assert.AreNotEqual(initialId,customerToCreate.Id);
+
             Assert.IsNotNull(customerRepository.GetCustomerById(customerToCreate.Id));
+            
+            customerRepository.Delete(customerToCreate);
             
         }
 
         [Test]
-        public void UpdateCustomerFromDatabasePerRequestSuccess()
+        public void UpdateCustomer_FromDatabase_PerRequest_Success()
         {
+            customerToUpdate.Name = "Taras";
+            customerToUpdate.Mail = "taras@mail.ru";
             customerRepository.Update(customerToUpdate);
-            Assert.IsNotNull(customerToUpdate);
-            Assert.AreEqual(customerToUpdate.Mail,"lol@mail.ru");
-            Assert.AreEqual(customerToUpdate.Id, 6);
-            Assert.AreEqual(customerToUpdate.Name, "Vanka");
+
+            var updated = customerRepository.GetCustomerById(customerToUpdate.Id);
+            Assert.IsNotNull(updated);
+            Assert.AreEqual("taras@mail.ru", updated.Mail);
+            Assert.AreEqual("Taras", updated.Name);
         }
 
         [Test]
-        public void DeleteCustomerFromDatabasePerRequestSuccess()
+        public void DeleteCustomer_FromDatabase_PerRequest_Success()
         {
+            customerRepository.Create(customerToDelete);
+
             Assert.IsTrue(customerRepository.Delete(customerToDelete));
-            Assert.IsNull(customerRepository.GetCustomerByName(customerToDelete.Name));
-            Assert.IsNull(customerRepository.GetCustomerByMail(customerToDelete.Mail));
+
+            Assert.IsNull(customerRepository.GetCustomerById(customerToDelete.Id));
         }
 
         [Test]
-        public void GetCustomerByIdFromDatabaseSuccess()
+        public void GetCustomerById_FromDatabase_Success()
         {
             var customer = customerRepository.GetCustomerById(customerToGet.Id);
             Assert.IsNotNull(customer);
-            Assert.AreEqual(customer.Id, 4);
-            Assert.AreEqual(customer.Name, "Marta");
-            Assert.AreEqual(customer.Mail, "marta@gmail.com");
+            Assert.AreEqual("Ivan4", customer.Name);
+            Assert.AreEqual("ivan4@gmail.com", customer.Mail);
 
         }
 
         [Test]
-        public void GetCustomerByNameFromDatabaseSuccess()
+        public void GetCustomerByName_FromDatabase_Success()
         {
             var customer = customerRepository.GetCustomerByName(customerToGet.Name);
             Assert.IsNotNull(customer);
-            Assert.AreEqual(customer.Id, 4);
-            Assert.AreEqual(customer.Name, "Marta");
-            Assert.AreEqual(customer.Mail, "marta@gmail.com");
-
+            Assert.AreEqual("Ivan4", customer.Name);
+            Assert.AreEqual("ivan4@gmail.com", customer.Mail);
         }
 
         [Test]
-        public void GetCustomerByMailFromDatabaseSuccess()
+        public void GetCustomerByMail_FromDatabase_Success()
         {
             var customer = customerRepository.GetCustomerByMail(customerToGet.Mail);
             Assert.IsNotNull(customer);
-            Assert.AreEqual(customer.Id, 4);
-            Assert.AreEqual(customer.Name, "Marta");
-            Assert.AreEqual(customer.Mail, "marta@gmail.com");
+            Assert.AreEqual("Ivan4", customer.Name);
+            Assert.AreEqual("ivan4@gmail.com", customer.Mail);
 
         }
 
         [Test]
-        public void GetCustomersFromDatabaseSuccess()
+        public void GetCustomers_FromDatabase_Success()
         {
             var customers = customerRepository.GetCustomers();
             Assert.IsNotNull(customers);
