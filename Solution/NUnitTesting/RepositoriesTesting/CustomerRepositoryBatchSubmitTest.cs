@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Data.Entity.Core.Objects;
-using System.Data.Entity.Infrastructure;
-using System.Linq;
-using System.Runtime.ExceptionServices;
+﻿using System.Collections.Generic;
 using DataLayer;
-using DataLayer.Context;
 using DataLayer.Repositories;
 using DataLayer.Repositories.Interfaces;
 using Models.Entities;
 using NUnit.Framework;
+
 namespace NUnitTesting.RepositoriesTesting
 {
     [TestFixture]
@@ -100,6 +94,7 @@ namespace NUnitTesting.RepositoriesTesting
         {
             customerRepository.Create(customerToDelete);
             customerRepository.Create(customerToDelete1);
+            contextManager.BatchSave();
 
             Assert.IsTrue(customerRepository.Delete(customerToDelete));
             Assert.IsTrue(customerRepository.Delete(customerToDelete1));

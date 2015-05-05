@@ -68,10 +68,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositoriesTesting\CustomerRepositoryBatchSubmitTest.cs" />
     <Compile Include="RepositoriesTesting\CustomerRepositorySingleSubmitTest.cs" />
-    <Compile Include="RepositoriesTesting\EquipmentRepositoryTest.cs" />
+    <Compile Include="RepositoriesTesting\EquipmentRepositoryBatchSubmitTest.cs" />
+    <Compile Include="RepositoriesTesting\EquipmentRepositorySingleSubmitTest.cs" />
     <Compile Include="RepositoriesTesting\PersonRepositoryTest.cs" />
     <Compile Include="RepositoriesTesting\PersonSkillRepositoryTest.cs" />
-    <Compile Include="RepositoriesTesting\ProjectRepositoryTest.cs" />
+    <Compile Include="RepositoriesTesting\ProjectRepositoryBatchSubmitTest.cs" />
+    <Compile Include="RepositoriesTesting\ProjectRepositorySingleSubmitTest.cs" />
     <Compile Include="RepositoriesTesting\RoleRepositoryTest.cs" />
     <Compile Include="RepositoriesTesting\SkillRepositoryTest.cs" />
   </ItemGroup>
