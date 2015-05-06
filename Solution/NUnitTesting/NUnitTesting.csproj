@@ -70,12 +70,16 @@
     <Compile Include="RepositoriesTesting\CustomerRepositorySingleSubmitTest.cs" />
     <Compile Include="RepositoriesTesting\EquipmentRepositoryBatchSubmitTest.cs" />
     <Compile Include="RepositoriesTesting\EquipmentRepositorySingleSubmitTest.cs" />
-    <Compile Include="RepositoriesTesting\PersonRepositoryTest.cs" />
-    <Compile Include="RepositoriesTesting\PersonSkillRepositoryTest.cs" />
+    <Compile Include="RepositoriesTesting\PersonRepositoryBatchSubmitTest.cs" />
+    <Compile Include="RepositoriesTesting\PersonRepositorySingleSubmitTest.cs" />
+    <Compile Include="RepositoriesTesting\PersonSkillRepositoryBatchSubmitTest.cs" />
+    <Compile Include="RepositoriesTesting\PersonSkillRepositorySingleSubmitTest.cs" />
     <Compile Include="RepositoriesTesting\ProjectRepositoryBatchSubmitTest.cs" />
     <Compile Include="RepositoriesTesting\ProjectRepositorySingleSubmitTest.cs" />
-    <Compile Include="RepositoriesTesting\RoleRepositoryTest.cs" />
-    <Compile Include="RepositoriesTesting\SkillRepositoryTest.cs" />
+    <Compile Include="RepositoriesTesting\RoleRepositoryBatchSubmitTest.cs" />
+    <Compile Include="RepositoriesTesting\RoleRepositorySingleSubmitTest.cs" />
+    <Compile Include="RepositoriesTesting\SkillRepositoryBatchSubmitTest.cs" />
+    <Compile Include="RepositoriesTesting\SkillRepositorySingleSubmitTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

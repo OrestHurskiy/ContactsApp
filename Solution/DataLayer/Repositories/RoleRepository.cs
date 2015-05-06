@@ -13,7 +13,7 @@ namespace DataLayer.Repositories
             this.contextManager = contextManager;
         }
 
-        public void CreateRole(Person person, Project project,string rolename)
+        public void CreateRole(Person person, Project project, string rolename)
         {
             if (person == null || project == null) return;
             var context = contextManager.CurrentContext;
@@ -24,13 +24,13 @@ namespace DataLayer.Repositories
             contextManager.Save(context);
 
         }
-        public void AttachRole(Person person,Project project,string rolename)
+        public void AttachRole(Person person, Project project, string rolename)
         {
             if (person == null || project == null) return;
             var context = contextManager.CurrentContext;
             context.Entry(person).State = EntityState.Modified;
             context.Entry(project).State = EntityState.Modified;
-            var role = new Roles {Person = person, Project = project, Role = rolename};
+            var role = new Roles { Person = person, Project = project, Role = rolename };
             context.Roles.Add(role);
             contextManager.Save(context);
         }
@@ -41,7 +41,7 @@ namespace DataLayer.Repositories
             var context = contextManager.CurrentContext;
             context.Entry(person).State = EntityState.Modified;
             context.Entry(project).State = EntityState.Modified;
-            var role = new Roles {PersonId = person.Id, ProjectId = project.Id};
+            var role = new Roles { PersonId = person.Id, ProjectId = project.Id };
             context.Entry(role).State = EntityState.Deleted;
             contextManager.Save(context);
             return true;
